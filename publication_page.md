@@ -5,6 +5,8 @@
 ### Journal Publications (+pre-prints):
 - A. Schoenit (1st co-author),S. Monfared (1st co-author), L. Anger (1st co-author), et al., "Force transmission is a master regulator of mechanical cell competition", Nature Materials, 2025. [[link]](https://doi.org/10.1038/s41563-025-02150-9).
 
+- S. Monfared, A. Ardaševa, A. Doostmohammadi, "Multi-phase-field Models of Biological Tissues", arXiv, 2025. [[link]](https://doi.org/10.48550/arXiv.2503.05053)
+
 - L. Balasubramaniam (1st co-author),S. Monfared (1st co-author), et al., "Dynamic forces shape the survival fate of eliminated cells", Nature Physics, 2025. [[link]](https://rdcu.be/d5AD6), [CNRS press coverage](https://www.insb.cnrs.fr/fr/cnrsinfo/vie-et-mort-des-cellules-epitheliales-le-role-cle-des-forces-mecaniques).
   
 - S. Monfared, G. Ravichandran, J.E., Andrade, A. Doostmohammadi, "Short-range correlation of stress chains near solid-to-liquid transition in active monolayers", The Journal of Royal Society Interface, 21:20240022, 2024. [[link]](https://doi.org/10.1098/rsif.2024.0022).
