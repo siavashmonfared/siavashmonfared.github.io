@@ -17,7 +17,7 @@ A 3D coarse-grained lattice-gas density functional model using finite-difference
 
 [CG-LGDFT-2D-MPI](https://github.com/siavashmonfared/CGDFT_2D)
 
-[CG-LGDFT-2D-MPI](https://github.com/siavashmonfared/CGDFT_3D)
+[CG-LGDFT-3D-MPI](https://github.com/siavashmonfared/CGDFT_3D)
 
 <iframe width="560" height="315" src="/movies/CGDFT_2D.gif" frameborder="0" allowfullscreen></iframe>
 
