@@ -8,7 +8,7 @@
 
 ---
 
-### 11/20/2024
+### 03/14/2025
 Cell competition maintains tissue health through the elimination of cellular sub-populations with reduced fitness. Despite the importance of cell competition in various physiological and pathological mechanisms, our understanding of the physical mechanisms arming a sub-population with more fitness remains limited. Particularly elusive is the role of intercellular forces which stems from the absence of tools to simultaneously control intercellular force transmission capabilities and measure the key physical properties that govern cell competition. By combining in-vitro experiments with in-silico modeling, our study challenges the common belief that winning cells always expel others through squeezing. In this study, we show that cells can remain compressed and still emerge as winners by unraveling the functional basis of a novel mechanism due to force transmission capability of the competing cells. The discovery of this physical mechanism has overarching implications in most vital biological processes, including morphogenesis as well as diseases such as acute inflammation and cancer.
 
 ### Reference: 
@@ -16,7 +16,13 @@ Cell competition maintains tissue health through the elimination of cellular sub
 
 <iframe width="560" height="315" src="/movies/mixture_sim.gif" frameborder="0" allowfullscreen></iframe>
 
-### 09/20/2024
+### 03/07/2025
+The development of complex multicellular organisms from a single parent cell is a highly orchestrated process that cells conduct collectively without central guidance, creating intricate dynamic patterns essential for development and regeneration. Despite significant advances in imaging spatiotemporal dynamics of cell collectives and mechanical characterization techniques, the role of physical forces in biological functions remains poorly understood. Physics-based models are crucial in complementing experiments, providing high-resolution spatiotemporal fields in three dimensions. This review focuses on dense, soft multicellular systems, such as tissues, where mechanical deformation of one cell necessitates the re-organization of neighboring cells. The multi-phase-field model offers a rich physics-based framework to advance our understanding of biological systems and provides a robust playground for non-equilibrium physics of active matter. We discuss the foundational aspects of the multi-phase-field model and their applications in understanding physics of active matter. We also explore the integration of biological physics with experimental data, covering cell migration, heterogeneous cell populations, and confined systems. Finally, we highlight current trends, the importance of multi-phase-field models in biological and physics research, and future challenges. 
+
+### Reference: 
+- S. Monfared, A. Ardaševa, A. Doostmohammadi, "Multi-phase-field Models of Biological Tissues", arXiv, 2025. [[link]](https://doi.org/10.48550/arXiv.2503.05053)
+
+### 01/08/2025
 This manuscript presents a novel connection between stress transmission capability modulated via reduced cell-cell adhesion and changes in the mode of cell extrusion, i.e. live vs dead. It shows that weakened E-cadherin expression, commonly observed in various tumors, leads to increased live cell extrusion and a greater proportion of basal extrusion in MDCK cells, cysts, and tumors. In contrast, apoptotic extrusion in wild-type cells corresponds to heightened compressive stress and fluctuations, which occur before caspase activation and apical extrusion. This link is validated through stress measurements and modeled effectively using a multi-phase fields model. Since cell extrusion is essential for maintaining tissue homeostasis and size, understanding the direction of extrusion (apical vs. basal) can reveal critical insights into tissue health and invasion. This study highlights how stress, adhesion, and cell stiffness influence both extrusion direction and the balance between live and apoptotic extrusions.
 
 <iframe width="500" height="260" src="/movies/wt_side_view.gif" frameborder="0" allowfullscreen></iframe>
