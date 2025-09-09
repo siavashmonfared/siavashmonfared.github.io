@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2025-06-19 15:59:00-0000
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Our paper on "Force transmission is a master regulator of mechanical cell competition" wins the 'Les Grandes Avancées en Biologie' from French Académie des sciences! 🏆
