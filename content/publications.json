@@ -18,7 +18,8 @@
         "title": "Dynamic forces shape the survival fate of eliminated cells",
         "authors": "Balasubramaniam*, L., Monfared*, S., et al. (* Co-first authors)",
         "journal": "Nature Physics, 2025",
-        "link": "https://rdcu.be/d5AD6"
+        "link": "https://rdcu.be/d5AD6",
+        "press": "CNRS press coverage"
       }
     ]
   },
@@ -30,6 +31,114 @@
         "authors": "Monfared, S., Ravichandran, G., Andrade, J.E., Doostmohammadi, A.",
         "journal": "Journal of the Royal Society Interface, 21:20240022, 2024",
         "link": "https://doi.org/10.1098/rsif.2024.0022"
+      }
+    ]
+  },
+  {
+    "year": "2023",
+    "papers": [
+      {
+        "title": "Mechanical basis and topological routes to cell elimination",
+        "authors": "Monfared, S., Ravichandran, G., Andrade, J.E., Doostmohammadi, A.",
+        "journal": "eLife, 12:e82435, 2023",
+        "link": "https://elifesciences.org/articles/82435",
+        "press": "Press coverage: Caltech News, Phys.org"
+      },
+      {
+        "title": "What is shape? Characterizing particle morphology for topology optimization of granular materials",
+        "authors": "Burqua de Macedo, R., Monfared, S., Karapiperis, K., Andrade, J.E.",
+        "journal": "Granular Matter, 25(2), 2023",
+        "link": "https://link.springer.com/article/10.1007/s10035-022-01282-y"
+      }
+    ]
+  },
+  {
+    "year": "2022",
+    "papers": [
+      {
+        "title": "Stress percolation criticality of glass to fluid transition in active cell layers",
+        "authors": "Monfared, S., Ravichandran, G., Andrade, J.E., Doostmohammadi, A.",
+        "journal": "arXiv:2210.08112, 2022",
+        "link": "https://arxiv.org/abs/2210.08112"
+      },
+      {
+        "title": "Stress transmission in entangled granular structures",
+        "authors": "Karapiperis, K., Monfared, S., Burqua de Macedo, R., Andrade, J.E.",
+        "journal": "Granular Matter, 24(91), 1369-1394, 2022",
+        "link": "https://link.springer.com/article/10.1007/s10035-022-01252-4"
+      },
+      {
+        "title": "Measuring Terzaghi's effective stress by decoding force transmission in fluid-saturated granular media",
+        "authors": "Andrade, J.E., Gu, Z., Monfared, S., Mac Donald, K.A., Ravichandran, G.",
+        "journal": "Journal of the Mechanics and Physics of Solids, 165, 104912, 2022",
+        "link": "https://www.sciencedirect.com/science/article/abs/pii/S0022509622001144"
+      }
+    ]
+  },
+  {
+    "year": "2021",
+    "papers": [
+      {
+        "title": "Mechanics of live cell elimination",
+        "authors": "Monfared, S., Ravichandran, G., Andrade, J.E., Doostmohammadi, A.",
+        "journal": "arXiv:2108.07657, 2021",
+        "link": "https://arxiv.org/abs/2108.07657"
+      }
+    ]
+  },
+  {
+    "year": "2020",
+    "papers": [
+      {
+        "title": "Effect of confinement on capillary phase transition in granular aggregates",
+        "authors": "Monfared, S., Zhou, T., Andrade, J.E., Ioannidou, K., Radjai, F., Ulm, F.-J., Pellenq, R. J.-M.",
+        "journal": "Physical Review Letters, 125, 255501, 2020",
+        "link": "https://doi.org/10.1103/PhysRevLett.125.255501"
+      }
+    ]
+  },
+  {
+    "year": "2018",
+    "papers": [
+      {
+        "title": "A methodology to calibrate and to validate effective solid potentials of heterogeneous porous media from computed tomography scans and laboratory-measured nanoindentation data",
+        "authors": "Monfared, S., Laubie, H., Radjai, F., Hubler, M., Pellenq, R. J.-M., Ulm, F.-J.",
+        "journal": "Acta Geotechnica, 13, 1369, 2018",
+        "link": "https://link.springer.com/article/10.1007/s11440-018-0687-9"
+      }
+    ]
+  },
+  {
+    "year": "2017",
+    "papers": [
+      {
+        "title": "Effective potentials and elastic properties in the Lattice-Element Method: Isotropy and Transverse Isotropy",
+        "authors": "Laubie, H., Monfared, S., Radjai, F., Pellenq, R. J.-M., Ulm, F.-J.",
+        "journal": "Journal of Nanomechanics and Micromechanics, 7, 3, 2017",
+        "link": "https://ascelibrary.org/doi/full/10.1061/(ASCE)NM.2153-5477.0000125"
+      },
+      {
+        "title": "Mesoscale poroelasticity of heterogeneous media",
+        "authors": "Monfared, S., Laubie, H., Radjai, F., Pellenq, R. J.-M., Ulm, F.-J.",
+        "journal": "Journal of Nanomechanics and Micromechanics, 7,4, 2017",
+        "link": "https://ascelibrary.org/doi/full/10.1061/(ASCE)NM.2153-5477.0000136"
+      },
+      {
+        "title": "Disorder-induced stiffness degradation of highly disordered porous materials",
+        "authors": "Laubie, H., Monfared, S., Radjai, F., Pellenq, R. J.-M., Ulm, F.-J.",
+        "journal": "Journal of the Mechanics and Physics of Solids, 106, 207, 2017",
+        "link": "https://www.sciencedirect.com/science/article/pii/S002250961730090X"
+      }
+    ]
+  },
+  {
+    "year": "2016",
+    "papers": [
+      {
+        "title": "A molecular informed poroelastic model for organic-rich, naturally occurring porous geocomposites",
+        "authors": "Monfared, S., Ulm, F.-J.",
+        "journal": "Journal of the Mechanics and Physics of Solids, 88, 186, 2016",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0022509615303355"
       }
     ]
   }

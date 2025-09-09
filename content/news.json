@@ -1,14 +1,55 @@
 [
   {
-    "date": "March 7, 2025",
-    "title": "Multi-phase-field Models Review Published",
-    "content": "Excited to share our comprehensive review on \"Multi-phase-field Models of Biological Tissues\" now available on arXiv! This work provides a unified framework for understanding dense, soft multicellular systems.",
-    "link": "https://doi.org/10.48550/arXiv.2503.05053"
+    "date": "June 19, 2025",
+    "title": "Award from French Académie des sciences",
+    "content": "Our paper on \"Force transmission is a master regulator of mechanical cell competition\", Nature Materials, 2025, wins the 'Les Grandes Avancées en Biologie' from French Académie des sciences!",
+    "link": "https://doi.org/10.1038/s41563-025-02150-9",
+    "media": "assets/video/mixture_sim.gif"
   },
   {
-    "date": "January 15, 2025",
-    "title": "Nature Materials Publication",
-    "content": "Our paper \"Force transmission is a master regulator of mechanical cell competition\" has been published in Nature Materials.",
-    "link": "https://doi.org/10.1038/s41563-025-02150-9"
+    "date": "March 14, 2025",
+    "title": "Nature Materials Publication on Cell Competition",
+    "content": "Cell competition maintains tissue health through the elimination of cellular sub-populations with reduced fitness. Despite the importance of cell competition in various physiological and pathological mechanisms, our understanding of the physical mechanisms arming a sub-population with more fitness remains limited. Particularly elusive is the role of intercellular forces which stems from the absence of tools to simultaneously control intercellular force transmission capabilities and measure the key physical properties that govern cell competition. By combining in-vitro experiments with in-silico modeling, our study challenges the common belief that winning cells always expel others through squeezing. In this study, we show that cells can remain compressed and still emerge as winners by unraveling the functional basis of a novel mechanism due to force transmission capability of the competing cells. The discovery of this physical mechanism has overarching implications in most vital biological processes, including morphogenesis as well as diseases such as acute inflammation and cancer.",
+    "link": "https://doi.org/10.1038/s41563-025-02150-9",
+    "reference": "A. Schoenit (1st co-author), S. Monfared (1st co-author), L. Anger (1st co-author), C. Rosse, V. Venkatesh, L. Balasubramaniam, E. Marangoni, P. Chavrier, R.-M., Mège, A. Doostmohammadi, B. Ladoux. \"Force transmission is a master regulator of mechanical cell competition\", Nature Materials, 2025.",
+    "media": "assets/video/mixture_sim.gif"
+  },
+  {
+    "date": "March 7, 2025",
+    "title": "Multi-phase-field Models Review Published",
+    "content": "The development of complex multicellular organisms from a single parent cell is a highly orchestrated process that cells conduct collectively without central guidance, creating intricate dynamic patterns essential for development and regeneration. Despite significant advances in imaging spatiotemporal dynamics of cell collectives and mechanical characterization techniques, the role of physical forces in biological functions remains poorly understood. Physics-based models are crucial in complementing experiments, providing high-resolution spatiotemporal fields in three dimensions. This review focuses on dense, soft multicellular systems, such as tissues, where mechanical deformation of one cell necessitates the re-organization of neighboring cells. The multi-phase-field model offers a rich physics-based framework to advance our understanding of biological systems and provides a robust playground for non-equilibrium physics of active matter.",
+    "link": "https://doi.org/10.48550/arXiv.2503.05053",
+    "reference": "S. Monfared, A. Ardaševa, A. Doostmohammadi, \"Multi-phase-field Models of Biological Tissues\", arXiv, 2025."
+  },
+  {
+    "date": "January 8, 2025",
+    "title": "Nature Physics Publication on Cell Extrusion",
+    "content": "This manuscript presents a novel connection between stress transmission capability modulated via reduced cell-cell adhesion and changes in the mode of cell extrusion, i.e. live vs dead. It shows that weakened E-cadherin expression, commonly observed in various tumors, leads to increased live cell extrusion and a greater proportion of basal extrusion in MDCK cells, cysts, and tumors. In contrast, apoptotic extrusion in wild-type cells corresponds to heightened compressive stress and fluctuations, which occur before caspase activation and apical extrusion. This link is validated through stress measurements and modeled effectively using a multi-phase fields model. Since cell extrusion is essential for maintaining tissue homeostasis and size, understanding the direction of extrusion (apical vs. basal) can reveal critical insights into tissue health and invasion.",
+    "link": "https://rdcu.be/d5AD6",
+    "reference": "L. Balasubramaniam (1st co-author), S. Monfared (1st co-author), A. Ardaševa, C. Rosse, A. Schoenit, T. Dang, C. Maric, L. Kocgozlu, S. Dubey, E. Marangoni, B.L., Doss, P. Chavrier, R.-M., Mège, A. Doostmohammadi, B. Ladoux, \"Dynamic forces shape the survival fate of eliminated cells\", Nature Physics, 2025.",
+    "media": "assets/video/wt_side_view.gif"
+  },
+  {
+    "date": "May 8, 2024",
+    "title": "Stress Chains in Active Matter",
+    "content": "Our study is one of the first on spatial correlation and organization of stress chains in dense, squishy active matter. An intriguing outcome of our research is the encoding of mechanical information in the studied stress chains, given that distinct underlying mechanisms for different control parameters manifests in a similar stress scaling near the solid-to-liquid transition. We expect these results to be of wide interest in the physics, mathematics, and biology communities.",
+    "link": "https://doi.org/10.1098/rsif.2024.0022",
+    "reference": "S. Monfared, G. Ravichandran, J.E., Andrade, A. Doostmohammadi, \"Short-range correlation of stress chains near solid-to-liquid transition in active monolayers\", The Journal of Royal Society Interface, 21:20240022, 2024.",
+    "media": "assets/video/stress_chains.gif"
+  },
+  {
+    "date": "January 5, 2024",
+    "title": "Active Force Generation due to Proliferation",
+    "content": "Although the expanding nature of cellular systems is central to their biological functions, the majority of approaches to study this topic are constrained to systems that conserve volume and/or mass and focus on active force generation due to cell motility. This latest development allows us to study active force generation due to proliferation, relaxing conservation of mass/volume. Proliferation in soft, dense living matter necessitates deformation and re-organization that can create a feedback loop (with the source of expansion) crucial to development and regeneration. Although this entry does not correspond to a new publication, but this is my current focus and I thought the simulation looks cool! hope you enjoy it too.",
+    "media": "assets/video/proliferate.gif"
+  },
+  {
+    "date": "April 24, 2023",
+    "title": "eLife Publication - Cell Elimination Mechanisms",
+    "content": "Eliminating unwanted or excess cells is a matter of life and death for the cell layers covering surfaces of our bodies. Nevertheless, since all the existing studies have only focused on effective two dimensional models of the cell layers so far, fundamental questions about the three-dimensional phenomenon of cell extrusion and in particular physical forces involved in the process remain unanswered. By developing a three-dimensional model and large scale simulations and in an analogy with liquid crystals, a state of matter between a solid and isotropic liquid, we show that cells can switch between distinct mechanical pathways – leveraging defects in nematic and hexatic orders – to eliminate unwanted cells (nematic and hexatic orders are manifestations of two different types of rotational symmetry in liquid crystals). Our findings provide a unique perspective on how through collective self-organization, cells exploit mechanical and physical constraints to switch between different modes of cell elimination.",
+    "link": "https://elifesciences.org/articles/82435",
+    "reference": "S. Monfared, G. Ravichandran, J.E., Andrade, A. Doostmohammadi, \"Mechanical basis and topological routes to cell elimination\", eLife, 12:e82435,2023.",
+    "press_coverage": "Press coverage: Caltech News, Phys.org",
+    "media": "assets/img/eLife_fig2.png"
   }
 ]
