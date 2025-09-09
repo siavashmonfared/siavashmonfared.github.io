@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siavash Monfared - Theoretical & Computational Physicist</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fdfdfd;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #3498db;
+        }
+        
+        main {
+            margin-top: 80px;
+            padding: 2rem 0;
+        }
+        
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 250px;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+        
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        
+        .hero-content .subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-content .description {
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+        
+        .profile-img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: #3498db;
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: #2980b9;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
+        
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        
+        .research-areas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .research-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .research-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .research-card h3 {
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+        
+        .news-item {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .news-date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .publication {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .publication h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .publication .authors {
+            color: #7f8c8d;
+            margin-bottom: 0.5rem;
+        }
+        
+        .publication .journal {
+            font-style: italic;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+        
+        .publication .links a {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+            transition: background 0.3s;
+        }
+        
+        .publication .links a:hover {
+            background: #2980b9;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Siavash Monfared</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="about" class="hero">
+            <div class="hero-content">
+                <h1>Siavash Monfared</h1>
+                <p class="subtitle">Theoretical & Computational Physicist</p>
+                <p class="description">
+                    Welcome! I am a theoretical and computational physicist specializing in active matter, 
+                    biological physics, and the mechanics of complex materials. My research focuses on 
+                    understanding how multi-cellular life emerges from single cells through highly 
+                    orchestrated processes where cells collectively form dynamic patterns without central guidance.
+                </p>
+                <div class="social-links">
+                    <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="#" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="#" title="ORCID"><i class="fab fa-orcid"></i></a>
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <img src="assets/img/prof_pic.jpg" alt="Siavash Monfared" class="profile-img">
+        </section>
+
+        <section id="research" class="section">
+            <h2>Research Areas</h2>
+            <div class="research-areas">
+                <div class="research-card">
+                    <h3>Active Matter & Biological Physics</h3>
+                    <p>Understanding collective cellular behavior, cell competition, and multicellular organization through physics-based modeling.</p>
+                </div>
+                <div class="research-card">
+                    <h3>Granular Materials</h3>
+                    <p>Investigating the mechanics of particulate media with complex shapes and the role of topology in collective behavior.</p>
+                </div>
+                <div class="research-card">
+                    <h3>Confined Fluids</h3>
+                    <p>Studying capillary phase transitions and fluid behavior in disordered porous media using statistical physics approaches.</p>
+                </div>
+                <div class="research-card">
+                    <h3>Computational Methods</h3>
+                    <p>Developing multi-phase field models, discrete element methods, and high-performance simulation frameworks for complex systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="section">
+            <h2>Recent News</h2>
+            <div class="news-item">
+                <div class="news-date">March 7, 2025</div>
+                <h3>Multi-phase-field Models Review Published</h3>
+                <p>Excited to share our comprehensive review on "Multi-phase-field Models of Biological Tissues" now available on arXiv! This work provides a unified framework for understanding dense, soft multicellular systems.</p>
+                <a href="https://doi.org/10.48550/arXiv.2503.05053">Read the full preprint</a>
+            </div>
+            <div class="news-item">
+                <div class="news-date">January 15, 2025</div>
+                <h3>Nature Materials Publication</h3>
+                <p>Our paper "Force transmission is a master regulator of mechanical cell competition" has been published in Nature Materials.</p>
+                <a href="https://doi.org/10.1038/s41563-025-02150-9">View publication</a>
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <h2>Selected Publications</h2>
+            
+            <h3 style="color: #3498db; margin: 2rem 0 1rem 0;">2025</h3>
+            <div class="publication">
+                <h3>Force transmission is a master regulator of mechanical cell competition</h3>
+                <p class="authors"><strong>Schoenit*, A.</strong>, <strong>Monfared*, S.</strong>, Anger*, L., et al. (* Co-first authors)</p>
+                <p class="journal">Nature Materials, 2025</p>
+                <div class="links">
+                    <a href="https://doi.org/10.1038/s41563-025-02150-9">DOI</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <h3>Multi-phase-field Models of Biological Tissues</h3>
+                <p class="authors"><strong>Monfared, S.</strong>, Ardaševa, A., Doostmohammadi, A.</p>
+                <p class="journal">arXiv, 2025</p>
+                <div class="links">
+                    <a href="https://doi.org/10.48550/arXiv.2503.05053">DOI</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <h3>Dynamic forces shape the survival fate of eliminated cells</h3>
+                <p class="authors">Balasubramaniam*, L., <strong>Monfared*, S.</strong>, et al. (* Co-first authors)</p>
+                <p class="journal">Nature Physics, 2025</p>
+                <div class="links">
+                    <a href="https://rdcu.be/d5AD6">DOI</a>
+                </div>
+            </div>
+
+            <h3 style="color: #3498db; margin: 2rem 0 1rem 0;">2024</h3>
+            <div class="publication">
+                <h3>Short-range correlation of stress chains near solid-to-liquid transition in active monolayers</h3>
+                <p class="authors"><strong>Monfared, S.</strong>, Ravichandran, G., Andrade, J.E., Doostmohammadi, A.</p>
+                <p class="journal">Journal of the Royal Society Interface, 21:20240022, 2024</p>
+                <div class="links">
+                    <a href="https://doi.org/10.1098/rsif.2024.0022">DOI</a>
+                </div>
+            </div>
+
+            <h3 style="color: #3498db; margin: 2rem 0 1rem 0;">2023</h3>
+            <div class="publication">
+                <h3>Mechanical basis and topological routes to cell elimination</h3>
+                <p class="authors"><strong>Monfared, S.</strong>, Ravichandran, G., Andrade, J.E., Doostmohammadi, A.</p>
+                <p class="journal">eLife, 12:e82435, 2023</p>
+                <div class="links">
+                    <a href="https://elifesciences.org/articles/82435">DOI</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Siavash Monfared. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

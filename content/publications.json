@@ -1,0 +1,36 @@
+[
+  {
+    "year": "2025",
+    "papers": [
+      {
+        "title": "Force transmission is a master regulator of mechanical cell competition",
+        "authors": "Schoenit*, A., Monfared*, S., Anger*, L., et al. (* Co-first authors)",
+        "journal": "Nature Materials, 2025",
+        "link": "https://doi.org/10.1038/s41563-025-02150-9"
+      },
+      {
+        "title": "Multi-phase-field Models of Biological Tissues",
+        "authors": "Monfared, S., Ardaševa, A., Doostmohammadi, A.",
+        "journal": "arXiv, 2025",
+        "link": "https://doi.org/10.48550/arXiv.2503.05053"
+      },
+      {
+        "title": "Dynamic forces shape the survival fate of eliminated cells",
+        "authors": "Balasubramaniam*, L., Monfared*, S., et al. (* Co-first authors)",
+        "journal": "Nature Physics, 2025",
+        "link": "https://rdcu.be/d5AD6"
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "papers": [
+      {
+        "title": "Short-range correlation of stress chains near solid-to-liquid transition in active monolayers",
+        "authors": "Monfared, S., Ravichandran, G., Andrade, J.E., Doostmohammadi, A.",
+        "journal": "Journal of the Royal Society Interface, 21:20240022, 2024",
+        "link": "https://doi.org/10.1098/rsif.2024.0022"
+      }
+    ]
+  }
+]

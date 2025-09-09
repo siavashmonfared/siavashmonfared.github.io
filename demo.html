@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Test Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .media-demo { margin: 20px 0; padding: 20px; border: 1px solid #ddd; }
+        video { max-width: 100%; height: auto; }
+        img { max-width: 300px; height: auto; }
+    </style>
+</head>
+<body>
+    <h1>Media Support Demo</h1>
+    
+    <div class="media-demo">
+        <h2>📸 Images (PNG, JPG, GIF)</h2>
+        <p>Place images in <code>assets/img/</code></p>
+        <pre>&lt;img src="assets/img/research-figure.png" alt="Research"&gt;</pre>
+        <!-- Example: <img src="assets/img/prof_pic.jpg" alt="Profile"> -->
+    </div>
+
+    <div class="media-demo">
+        <h2>🎬 Videos (MP4, MOV)</h2>
+        <p>Place videos in <code>assets/video/</code></p>
+        <pre>&lt;video controls&gt;
+  &lt;source src="assets/video/simulation.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</pre>
+        <!-- Example video player -->
+        <video controls style="width: 300px;">
+            <p>Your browser doesn't support HTML5 video.</p>
+        </video>
+    </div>
+
+    <div class="media-demo">
+        <h2>📄 PDFs</h2>
+        <p>Place PDFs in <code>assets/docs/</code></p>
+        <h3>Link to PDF:</h3>
+        <pre>&lt;a href="assets/docs/paper.pdf" target="_blank"&gt;View Paper&lt;/a&gt;</pre>
+        
+        <h3>Embedded PDF:</h3>
+        <pre>&lt;embed src="assets/docs/paper.pdf" width="100%" height="600px"&gt;</pre>
+    </div>
+
+    <div class="media-demo">
+        <h2>📊 Any File Type</h2>
+        <p>GitHub Pages serves any file type:</p>
+        <ul>
+            <li><strong>Data:</strong> <code>assets/data/dataset.csv</code></li>
+            <li><strong>Code:</strong> <code>assets/code/simulation.py</code></li>
+            <li><strong>Archives:</strong> <code>assets/downloads/supplementary.zip</code></li>
+        </ul>
+    </div>
+
+    <div class="media-demo">
+        <h2>🎯 Interactive Elements</h2>
+        <button onclick="alert('JavaScript works!')">Test JavaScript</button>
+        <p>You can add interactive features, animations, or embed external content.</p>
+    </div>
+
+    <p><a href="index.html">← Back to Main Site</a></p>
+</body>
+</html>
