@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Siavash Monfared</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #666;
+            background-color: #fdfdfd;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #3498db;
+        }
+        
+        main {
+            margin-top: 80px;
+            padding: 2rem 0;
+        }
+        
+        .back-link {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: background 0.3s;
+        }
+        
+        .back-link:hover {
+            background: #2980b9;
+        }
+        
+        .section {
+            margin-bottom: 4rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: #333;
+            font-weight: 700;
+            margin: 3rem 0 1.5rem 0;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        
+        .research-overview {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .research-overview img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .research-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+        }
+        
+        .research-section p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+        
+        .media-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .media-container img, .media-container video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin: 1rem;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Siavash Monfared</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="index.html#news">News</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <a href="index.html" class="back-link">← Back to home page</a>
+        
+        <h1>Research</h1>
+        
+        <div class="research-overview">
+            <img src="assets/img/research_program.png" alt="Research Program Overview" width="500" height="280">
+        </div>
+
+        <div class="research-section">
+            <h2>Active matter & Biological Physics</h2>
+            <p>
+                Understanding how multi-cellular life emerges from a single cell is yet to be fully understood. This processes is a highly orchestrated process where cell can collectively form dynamic patterns without any central guidance. I develop theoretical and high performance computational models to decipher the complex interplay of nonequilibrium statistical physics of living cells with biological functions accounting for various sources that drive a living system away from equilibrium.
+            </p>
+            <div class="media-container">
+                <img src="assets/video/3d_mpf_simulation.gif" alt="3D MPF Simulation" style="max-width: 560px; height: auto;">
+            </div>
+        </div>
+
+        <div class="research-section">
+            <h2>Physics of confined fluids & capillary phase transition</h2>
+            <p>
+                The behavior of bulk fluid contrast significantly with that of a confined fluid. This is a consequence of pore morphology, topology and the strength of fluid-solid interactions that alter the energy landscape of a fluid. The effect of confinement on fluid behavior is of interest for a range of scientific and engineering applications. I develop high performance computational models to study this phenomane accounting for various sources of structural and/or materials disorder.
+            </p>
+            <div class="media-container">
+                <img src="assets/video/CGDFT_2D.gif" alt="CGDFT 2D Simulation" style="max-width: 560px; height: auto;">
+            </div>
+        </div>
+
+        <div class="research-section">
+            <h2>Granular physics</h2>
+            <p>
+                Granular matter are one of the most ubiquitous materials on earth. The interplay of a particle shape; packing characteristics and its physical behavior is not fully deciphered. I am interested in understanding how topology of a particle can give rise to very interesting collective behavior not typically associated with classical - convex shaped - granular matter.
+            </p>
+            <div class="media-container">
+                <img src="assets/video/staple_shaped.gif" alt="Staple-shaped particles simulation" style="max-width: 560px; height: auto;">
+                <img src="assets/video/sshaped.gif" alt="S-shaped particles simulation" style="max-width: 560px; height: auto;">
+            </div>
+        </div>
+
+        <div class="research-section">
+            <h2>Mechanics highly heterogeneous solids</h2>
+            <p>
+                Continuum based modeling approaches have limited capabilities to capture the spatial distribution of solid constituents and their mechanical interactions. Primarily built on Eshelby's inclusion problem and mean-field based homogenization methods, continuum micromechanics approaches reduce the spatial distribution of the solid constituents and their mechanical interactions to effective fields. Furthermore, perturbation based solutions in statistical continuum mechanics are limited to small fluctuations in mechanical properties and thus unable to capture heavy-tailed distributions characteristics of highly heterogeneous media. For these materials with the length scale of observation often on par with that of the inclusions, defining a representative elementary volume that satisfies scale separability - a requirement for any continuum approach - becomes an impractical task. In this vein, we developed a discrete theoretical and computational framework that addresses the limitations encountered in the continuum approach.
+            </p>
+            <div class="media-container">
+                <img src="assets/img/mechanics.png" alt="Mechanics of heterogeneous solids" width="500" height="300">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Siavash Monfared. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
