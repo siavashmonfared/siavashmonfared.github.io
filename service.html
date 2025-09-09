@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research - Siavash Monfared</title>
+    <title>DEI & Service - Siavash Monfared</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     
     <!-- Google Analytics -->
@@ -114,19 +114,14 @@
             padding-bottom: 0.5rem;
         }
         
-        .research-overview {
-            text-align: center;
-            margin-bottom: 3rem;
+        h3 {
+            font-size: 1.4rem;
+            color: #333;
+            font-weight: 700;
+            margin: 2rem 0 1rem 0;
         }
         
-        .research-overview img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .research-section {
+        .content-section {
             background: white;
             padding: 2rem;
             border-radius: 10px;
@@ -134,10 +129,31 @@
             margin-bottom: 3rem;
         }
         
-        .research-section p {
+        .content-section p {
             font-size: 1.1rem;
             line-height: 1.7;
             margin-bottom: 2rem;
+        }
+        
+        .content-section ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+        
+        .content-section li {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
+        .content-section a {
+            color: #2d5016;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .content-section a:hover {
+            color: #1e3a0f;
+            text-decoration: underline;
         }
         
         .media-container {
@@ -152,6 +168,18 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             display: block;
             margin: 1rem auto;
+        }
+        
+        .project-overview {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .project-overview img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         
         footer {
@@ -197,51 +225,39 @@
     <main class="container">
         <a href="index.html" class="back-link">← Back to home page</a>
         
-        <h1>Research</h1>
-        
-        <div class="research-overview">
-            <img src="assets/img/research_program.png" alt="Research Program Overview" width="500" height="280">
-        </div>
+        <h1>DEI & Service</h1>
 
-        <div class="research-section">
-            <h2>Active matter & Biological Physics</h2>
-            <p>
-                Understanding how multi-cellular life emerges from a single cell is yet to be fully understood. This processes is a highly orchestrated process where cell can collectively form dynamic patterns without any central guidance. I develop theoretical and high performance computational models to decipher the complex interplay of nonequilibrium statistical physics of living cells with biological functions accounting for various sources that drive a living system away from equilibrium.
-            </p>
-            <div class="media-container">
-                <img src="assets/video/3d_mpf_simulation.gif" alt="3D MPF Simulation">
+        <div class="content-section">
+            <h2>Mentorship</h2>
+            
+            <div class="project-overview">
+                <img src="assets/img/SURF_2019.jpg" alt="SURF 2019">
             </div>
-        </div>
 
-        <div class="research-section">
-            <h2>Physics of confined fluids & capillary phase transition</h2>
+            <h3>Mentor, The Summer Undergraduate Research Fellowships (SURF), Caltech</h3>
             <p>
-                The behavior of bulk fluid contrast significantly with that of a confined fluid. This is a consequence of pore morphology, topology and the strength of fluid-solid interactions that alter the energy landscape of a fluid. The effect of confinement on fluid behavior is of interest for a range of scientific and engineering applications. I develop high performance computational models to study this phenomane accounting for various sources of structural and/or materials disorder.
+                As a postdoctoral scholar, I have and continue to mentor students participating in Caltech's flagship undergraduate research program, SURF. Here are some examples of the projects that we have explored together:
             </p>
-            <div class="media-container">
-                <img src="assets/video/CGDFT_2D.gif" alt="CGDFT 2D Simulation">
-            </div>
-        </div>
+            <ul>
+                <li>Jade Leong (University of Massachusetts Lowell) - <a href="assets/pdf/Jade_Leong_SURF_Final_Presentation.pdf" target="_blank">Mechanical behavior of entangled, non-convex granular particles: experimental analysis of the angle of repose</a>.</li>
+                <li>Katheryn Wang (Harvey Mudd College) - <a href="assets/pdf/Katheryn_Wang_Final_Presentation.pdf" target="_blank">Uniaxial compression of discrete S shaped particles</a>.</li>
+                <li>Sydney Richardson (California Institute of Technology) - <a href="assets/pdf/Sydney_Richardson_Final_Presentation.pdf" target="_blank">Tensile behavior of entangled non-convex granular particles</a>.</li>
+                <li>Animesh Rastogi (Indian Institute of Technology Gandhinagar) - <a href="assets/pdf/Animesh_Final_Presentation.pdf" target="_blank">Pluviation simulation and angle of repose of entangled granular materials</a>.</li>
+                <li>Omkar Devidas Kadam (Indian Institute of Technology Gandhinagar) - <a href="assets/pdf/SURF_presentation_Omkar.pdf" target="_blank">Exploring the properties of free standing column built out of designed granular particles using level-set discrete element method</a>.</li>
+                <li>Eleni Blatsouka (National Technical University of Athens) - <a href="assets/pdf/Stability of granular structures_Eleni.pdf" target="_blank">Stability of granular structures of non-convex particles under vibration</a>.</li>
+                <li>Graciela Lopez (University of Costa Rica) - <a href="https://youtu.be/D0MzYhnmk9o" target="_blank">Influence of slenderness on the bearing capacity of a confined granular column</a>.</li>
+                <li>Utkarsh Gupta (Indian Institute of Technology Delhi) - <a href="https://youtu.be/bWNyhWF_l0o" target="_blank">Granular Material In-Fill Inside a Confining Annulus</a>.</li>
+            </ul>
 
-        <div class="research-section">
-            <h2>Granular physics</h2>
+            <h3>Resident Tutor, Cabot Undergraduate House, Harvard University</h3>
             <p>
-                Granular matter are one of the most ubiquitous materials on earth. The interplay of a particle shape; packing characteristics and its physical behavior is not fully deciphered. I am interested in understanding how topology of a particle can give rise to very interesting collective behavior not typically associated with classical - convex shaped - granular matter.
+                While a graduate student at MIT, for two years I resided in Cabot House, an undergraduate residence at Harvard University, as Resident Tutor among 400 undergraduates. I primarily interacted with students pursuing STEM related concentrations, advised them on academic and non-academic STEM career paths, assisted them on graduate school applications, scholarships, fellowships, research internships and tutored them on their math, physics and engineering courses among other things.
             </p>
-            <div class="media-container">
-                <img src="assets/video/staple_shaped.gif" alt="Staple-shaped particles simulation">
-                <img src="assets/video/sshaped.gif" alt="S-shaped particles simulation">
-            </div>
-        </div>
 
-        <div class="research-section">
-            <h2>Mechanics highly heterogeneous solids</h2>
+            <h3>Tutor, Multicultural Engineering Program, College of Engineering, University of Oklahoma</h3>
             <p>
-                Continuum based modeling approaches have limited capabilities to capture the spatial distribution of solid constituents and their mechanical interactions. Primarily built on Eshelby's inclusion problem and mean-field based homogenization methods, continuum micromechanics approaches reduce the spatial distribution of the solid constituents and their mechanical interactions to effective fields. Furthermore, perturbation based solutions in statistical continuum mechanics are limited to small fluctuations in mechanical properties and thus unable to capture heavy-tailed distributions characteristics of highly heterogeneous media. For these materials with the length scale of observation often on par with that of the inclusions, defining a representative elementary volume that satisfies scale separability - a requirement for any continuum approach - becomes an impractical task. In this vein, we developed a discrete theoretical and computational framework that addresses the limitations encountered in the continuum approach.
+                As an undergraduate scholar in Multicultural Engineering Program, the flagship program at University of Oklahoma's College of Engineering for diversity and inclusion, I tutored & mentored a number of students in variety of math, physics, and engineering subjects.
             </p>
-            <div class="media-container">
-                <img src="assets/img/mechanics.png" alt="Mechanics of heterogeneous solids" width="500" height="300">
-            </div>
         </div>
     </main>
 

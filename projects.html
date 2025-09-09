@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects & Mentorship - Siavash Monfared</title>
+    <title>Projects - Siavash Monfared</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8PX8YWL3J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-B8PX8YWL3J');
+    </script>
     <style>
         * {
             margin: 0;
@@ -61,7 +70,7 @@
         }
         
         .nav-links a:hover {
-            color: #3498db;
+            color: #2d5016;
         }
         
         main {
@@ -126,16 +135,6 @@
             margin-bottom: 2rem;
         }
         
-        .content-section ul {
-            margin: 1rem 0;
-            padding-left: 2rem;
-        }
-        
-        .content-section li {
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-        
         .content-section a {
             color: #2d5016;
             text-decoration: none;
@@ -157,19 +156,8 @@
             height: auto;
             border-radius: 5px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            margin: 1rem;
-        }
-        
-        .project-overview {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        
-        .project-overview img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            display: block;
+            margin: 1rem auto;
         }
         
         footer {
@@ -203,7 +191,8 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="research.html">Research</a></li>
-                <li><a href="projects.html">Projects & Mentorship</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="service.html">DEI & Service</a></li>
                 <li><a href="index.html#publications">Publications</a></li>
                 <li><a href="index.html#news">News</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
@@ -214,11 +203,9 @@
     <main class="container">
         <a href="index.html" class="back-link">← Back to home page</a>
         
-        <h1>Projects & Mentorship</h1>
+        <h1>Projects</h1>
 
         <div class="content-section">
-            <h2>Projects</h2>
-            
             <h3>CELADRO-3D & CELADRO-3D-CUDA</h3>
             <p>
                 3D multiphase field model based on finite difference methods with CUDA programming for GPU acceleration. This software package can efficiently simulate the collective dynamics of active, soft matter and biological cells, utilizing high-performance computing (HPC) for scalable and computationally intensive simulations. Links to GitHub projects:
@@ -230,9 +217,11 @@
                 <a href="https://github.com/siavashmonfared/CELADRO-3D-CUDA" target="_blank">CELADRO-3D-CUDA</a>
             </p>
             <div class="media-container">
-                <img src="assets/video/3d_mpf_simulation.gif" alt="3D MPF Simulation" style="max-width: 560px; height: auto;">
+                <img src="assets/video/3d_mpf_simulation.gif" alt="3D MPF Simulation">
             </div>
+        </div>
 
+        <div class="content-section">
             <h3>CG-LGDFT-3D-MPI & CG-LGDFT-2D-MPI</h3>
             <p>
                 A 3D coarse-grained lattice-gas density functional model using finite-difference techniques on a simple cubic lattice. Implemented parallel processing with Message Passing Interface (MPI) for domain decomposition, allowing for distributed computing across multiple nodes. This software framework was applied to explore the thermodynamics and statistical mechanics of confined fluids, providing scalable solutions for large-scale simulations. Links to GitHub projects:
@@ -244,49 +233,18 @@
                 <a href="https://github.com/siavashmonfared/CGDFT_3D" target="_blank">CG-LGDFT-3D-MPI</a>
             </p>
             <div class="media-container">
-                <img src="assets/video/CGDFT_2D.gif" alt="CGDFT 2D Simulation" style="max-width: 560px; height: auto;">
+                <img src="assets/video/CGDFT_2D.gif" alt="CGDFT 2D Simulation">
             </div>
+        </div>
 
+        <div class="content-section">
             <h3>LEM-3D-MPI</h3>
             <p>
                 A 3D discrete computational solid mechanics framework using finite differences and Message Passing Interface (MPI) for parallel processing and domain decomposition. The software is specifically designed to analyze highly heterogeneous solids by incorporating multiple interacting random fields, making it suitable for studying complex mechanical behaviors in materials with non-uniform properties.
             </p>
             <div class="media-container">
-                <img src="assets/img/LEM.png" alt="LEM Framework" width="500" height="200">
+                <img src="assets/img/LEM.png" alt="LEM Framework">
             </div>
-        </div>
-
-        <div class="content-section">
-            <h2>Mentorship</h2>
-            
-            <div class="project-overview">
-                <img src="assets/img/SURF_2019.jpg" alt="SURF 2019" style="max-width: 600px;">
-            </div>
-
-            <h3>Mentor, The Summer Undergraduate Research Fellowships (SURF), Caltech</h3>
-            <p>
-                As a postdoctoral scholar, I have and continue to mentor students participating in Caltech's flagship undergraduate research program, SURF. Here are some examples of the projects that we have explored together:
-            </p>
-            <ul>
-                <li>Jade Leong (University of Massachusetts Lowell) - <a href="assets/pdf/Jade_Leong_SURF_Final_Presentation.pdf" target="_blank">Mechanical behavior of entangled, non-convex granular particles: experimental analysis of the angle of repose</a>.</li>
-                <li>Katheryn Wang (Harvey Mudd College) - <a href="assets/pdf/Katheryn_Wang_Final_Presentation.pdf" target="_blank">Uniaxial compression of discrete S shaped particles</a>.</li>
-                <li>Sydney Richardson (California Institute of Technology) - <a href="assets/pdf/Sydney_Richardson_Final_Presentation.pdf" target="_blank">Tensile behavior of entangled non-convex granular particles</a>.</li>
-                <li>Animesh Rastogi (Indian Institute of Technology Gandhinagar) - <a href="assets/pdf/Animesh_Final_Presentation.pdf" target="_blank">Pluviation simulation and angle of repose of entangled granular materials</a>.</li>
-                <li>Omkar Devidas Kadam (Indian Institute of Technology Gandhinagar) - <a href="assets/pdf/SURF_presentation_Omkar.pdf" target="_blank">Exploring the properties of free standing column built out of designed granular particles using level-set discrete element method</a>.</li>
-                <li>Eleni Blatsouka (National Technical University of Athens) - <a href="assets/pdf/Stability of granular structures_Eleni.pdf" target="_blank">Stability of granular structures of non-convex particles under vibration</a>.</li>
-                <li>Graciela Lopez (University of Costa Rica) - <a href="https://youtu.be/D0MzYhnmk9o" target="_blank">Influence of slenderness on the bearing capacity of a confined granular column</a>.</li>
-                <li>Utkarsh Gupta (Indian Institute of Technology Delhi) - <a href="https://youtu.be/bWNyhWF_l0o" target="_blank">Granular Material In-Fill Inside a Confining Annulus</a>.</li>
-            </ul>
-
-            <h3>Resident Tutor, Cabot Undergraduate House, Harvard University</h3>
-            <p>
-                While a graduate student at MIT, for two years I resided in Cabot House, an undergraduate residence at Harvard University, as Resident Tutor among 400 undergraduates. I primarily interacted with students pursuing STEM related concentrations, advised them on academic and non-academic STEM career paths, assisted them on graduate school applications, scholarships, fellowships, research internships and tutored them on their math, physics and engineering courses among other things.
-            </p>
-
-            <h3>Tutor, Multicultural Engineering Program, College of Engineering, University of Oklahoma</h3>
-            <p>
-                As an undergraduate scholar in Multicultural Engineering Program, the flagship program at University of Oklahoma's College of Engineering for diversity and inclusion, I tutored & mentored a number of students in variety of math, physics, and engineering subjects.
-            </p>
         </div>
     </main>
 
