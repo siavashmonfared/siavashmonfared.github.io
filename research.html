@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research - Siavash Monfared</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="192x192" href="favicon-192.png">
-    
+
+    <!-- Fonts + stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8PX8YWL3J"></script>
     <script>
@@ -19,180 +25,18 @@
         gtag('js', new Date());
         gtag('config', 'G-B8PX8YWL3J');
     </script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #666;
-            background-color: #fdfdfd;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        header {
-            background: #fff;
-            padding: 1rem 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-        
-        nav {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #333;
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-        
-        .nav-links a {
-            text-decoration: none;
-            color: #666;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        
-        .nav-links a:hover {
-            color: #2d5016;
-        }
-        
-        main {
-            margin-top: 80px;
-            padding: 2rem 0;
-        }
-        
-        .back-link {
-            display: inline-block;
-            background: #2d5016;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-bottom: 2rem;
-            transition: background 0.3s;
-        }
-        
-        .back-link:hover {
-            background: #1e3a0f;
-        }
-        
-        .section {
-            margin-bottom: 4rem;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            color: #333;
-            font-weight: 700;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-        
-        h2 {
-            font-size: 1.8rem;
-            color: #333;
-            font-weight: 700;
-            margin: 3rem 0 1.5rem 0;
-            border-bottom: 2px solid #2d5016;
-            padding-bottom: 0.5rem;
-        }
-        
-        .research-overview {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        
-        .research-overview img {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .research-section {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            margin-bottom: 3rem;
-        }
-        
-        .research-section p {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            margin-bottom: 2rem;
-        }
-        
-        .media-container {
-            text-align: center;
-            margin: 2rem 0;
-        }
-        
-        .media-container img, .media-container video {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            display: block;
-            margin: 1rem auto;
-        }
-        
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 3rem;
-        }
-        
-        @media (max-width: 768px) {
-            .nav-links {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            h2 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <nav class="container">
+
+<div class="term">
+    <header class="nav-bar">
+        <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="research.html">Research</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="service.html">DEI & Service</a></li>
-                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="service.html">DEI &amp; Service</a></li>
+                <li><a href="publications.html">Publications</a></li>
                 <li><a href="index.html#news">News</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
@@ -201,15 +45,15 @@
 
     <main class="container">
         <a href="index.html" class="back-link">← Back to home page</a>
-        
+
         <h1>Research</h1>
-        
+
         <div class="research-overview">
             <img src="assets/img/research_program.png" alt="Research Program Overview">
         </div>
 
         <div class="research-section">
-            <h2>Active matter & Biological Physics</h2>
+            <h2>Active matter &amp; Biological Physics</h2>
             <p>
                 Understanding how multi-cellular life emerges from a single cell is yet to be fully understood. This processes is a highly orchestrated process where cell can collectively form dynamic patterns without any central guidance. I develop theoretical and high performance computational models to decipher the complex interplay of nonequilibrium statistical physics of living cells with biological functions accounting for various sources that drive a living system away from equilibrium.
             </p>
@@ -219,7 +63,7 @@
         </div>
 
         <div class="research-section">
-            <h2>Physics of confined fluids & capillary phase transition</h2>
+            <h2>Physics of confined fluids &amp; capillary phase transition</h2>
             <p>
                 The behavior of bulk fluid contrast significantly with that of a confined fluid. This is a consequence of pore morphology, topology and the strength of fluid-solid interactions that alter the energy landscape of a fluid. The effect of confinement on fluid behavior is of interest for a range of scientific and engineering applications. I develop high performance computational models to study this phenomane accounting for various sources of structural and/or materials disorder.
             </p>
@@ -248,6 +92,7 @@
                 <img src="assets/img/mechanics.png" alt="Mechanics of heterogeneous solids" width="500" height="300">
             </div>
         </div>
+
     </main>
 
     <footer>
@@ -255,17 +100,17 @@
             <p>&copy; 2025 Siavash Monfared. All rights reserved.</p>
         </div>
     </footer>
+</div>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+<script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
         });
-    </script>
+    });
+</script>
 </body>
 </html>

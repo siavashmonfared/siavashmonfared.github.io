@@ -1,0 +1,613 @@
+/* =============================================================
+   Siavash Monfared — shared stylesheet
+   Terminal ("glow") aesthetic on a Solarized-Light palette.
+
+   Heading hierarchy (same pill shape, descending emphasis):
+     h1 — magenta pill + offset violet shadow   (page title)
+     h2 — blue pill   + softer slate shadow     (section)
+     h3 — green pill  + flat                    (sub-section)
+   ============================================================= */
+
+:root {
+  /* Solarized Light palette */
+  --sol-base03:  #002B36;
+  --sol-base02:  #073642;
+  --sol-base01:  #586E75;
+  --sol-base00:  #657B83;
+  --sol-base0:   #839496;
+  --sol-base1:   #93A1A1;
+  --sol-base2:   #EEE8D5;
+  --sol-base3:   #FDF6E3;
+  --sol-yellow:  #B58900;
+  --sol-orange:  #CB4B16;
+  --sol-red:     #DC322F;
+  --sol-magenta: #D33682;
+  --sol-violet:  #6C71C4;
+  --sol-blue:    #268BD2;
+  --sol-cyan:    #2AA198;
+  --sol-green:   #859900;
+
+  --bg:          var(--sol-base3);
+  --surface:     #FFFCF0;
+  --chrome:      var(--sol-base2);
+  --chrome-edge: #E4DDC4;
+  --text:        var(--sol-base01);
+  --text-strong: var(--sol-base02);
+  --text-muted:  var(--sol-base1);
+  --link:        var(--sol-blue);
+
+  --maxw: 960px;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { background: var(--bg); }
+
+body {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  padding: 24px 14px 60px;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+}
+
+/* ------------------------------------------------------------
+   Terminal window chrome
+   ------------------------------------------------------------ */
+.term {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  background: var(--surface);
+  border: 1px solid var(--chrome-edge);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow:
+    0 24px 60px rgba(88, 110, 117, 0.18),
+    0 2px 4px rgba(88, 110, 117, 0.08);
+}
+
+.term-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: var(--chrome);
+  border-bottom: 1px solid var(--chrome-edge);
+  color: var(--text-muted);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  position: static;   /* override old `position: fixed` from inline styles */
+  box-shadow: none;
+}
+.term-titlebar .dots { display: flex; gap: 6px; margin-right: 8px; }
+.term-titlebar .dot {
+  width: 12px; height: 12px; border-radius: 50%;
+  background: rgba(88, 110, 117, 0.25);
+}
+.term-titlebar .dot.r { background: #ff5f56; }
+.term-titlebar .dot.y { background: #ffbd2e; }
+.term-titlebar .dot.g { background: #27c93f; }
+.term-titlebar .title { flex: 1; text-align: center; opacity: 0.85; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.term-titlebar .clock { width: 72px; text-align: right; font-variant-numeric: tabular-nums; opacity: 0.7; }
+
+/* ------------------------------------------------------------
+   Navigation (tab-style inside the window)
+   ------------------------------------------------------------ */
+.nav-bar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--chrome-edge);
+  padding: 8px 18px;
+}
+.nav-bar .nav-links,
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  align-items: center;
+}
+.nav-links a {
+  color: var(--text) !important;
+  text-decoration: none;
+  font-size: 12.5px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  transition: color 120ms ease, background 120ms ease;
+}
+.nav-links a:hover {
+  color: var(--sol-base3) !important;
+  background: var(--sol-blue);
+}
+
+/* Remove old fixed-header rules inherited from inline styles */
+header { position: static !important; width: auto !important; box-shadow: none !important; }
+
+/* ------------------------------------------------------------
+   Main content container (body of the "terminal")
+   ------------------------------------------------------------ */
+.term-body,
+main.container,
+main {
+  padding: 24px 26px 36px;
+}
+main { margin-top: 0 !important; }
+
+/* prompt line */
+.prompt {
+  color: var(--sol-green);
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+.prompt .cmd { color: var(--sol-orange); }
+.prompt .cmd::before { content: "$ "; color: var(--sol-green); opacity: 0.7; }
+.prompt-end { margin-top: 28px; color: var(--sol-orange); }
+.cursor {
+  display: inline-block;
+  width: 8px; height: 1em;
+  margin-left: 1px;
+  vertical-align: text-bottom;
+  background: var(--sol-orange);
+  animation: blink 1.05s steps(1) infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+/* ------------------------------------------------------------
+   Typography
+   ------------------------------------------------------------ */
+h1, h2, h3, h4 {
+  font-family: inherit;
+  line-height: 1.3;
+  letter-spacing: 0.005em;
+}
+
+/* Pill hierarchy */
+main h1,
+main h2,
+main h3 {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 3px;
+  font-weight: 700;
+  color: var(--sol-base3);
+}
+
+main h1 {
+  background: var(--sol-magenta);
+  box-shadow: 5px 5px 0 var(--sol-violet);
+  font-size: 22px;
+  padding: 6px 14px;
+  margin: 0 0 22px;
+  text-align: left !important;
+}
+
+main h2 {
+  background: var(--sol-blue);
+  box-shadow: 3px 3px 0 var(--sol-base1);
+  font-size: 14px;
+  margin: 28px 0 14px;
+  border: none !important;      /* kill old "border-bottom" from inline styles */
+  padding: 4px 12px !important;
+}
+
+main h3 {
+  background: var(--sol-green);
+  font-size: 13px;
+  padding: 3px 10px;
+  margin: 18px 0 10px;
+}
+
+/* When an h3 is a year marker (publications list), ensure it breaks onto its own line */
+.publication + h3,
+main h3 { display: inline-block; }
+main h3::after { content: ""; display: block; }
+
+p {
+  margin: 0 0 12px;
+}
+main p { color: var(--text); }
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(38, 139, 210, 0.45);
+  transition: color 120ms ease, text-decoration-color 120ms ease;
+}
+a:hover {
+  color: var(--sol-cyan);
+  text-decoration-color: var(--sol-cyan);
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed var(--text-muted);
+  opacity: 0.35;
+  margin: 22px 0;
+}
+
+code, pre {
+  font-family: inherit;
+  background: var(--chrome);
+  color: var(--sol-yellow);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 0.92em;
+}
+
+strong { color: var(--text-strong); }
+
+ul { padding-left: 0; list-style: none; }
+main ul li {
+  position: relative;
+  padding-left: 18px;
+  margin: 0 0 8px;
+}
+main ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--sol-magenta);
+  font-weight: 700;
+}
+/* nav-links should not get bullets */
+.nav-links li { padding-left: 0; }
+.nav-links li::before { content: none !important; }
+
+/* ------------------------------------------------------------
+   Home page — profile "card" (was .side-panel)
+   Repositioned above content for the terminal column layout
+   ------------------------------------------------------------ */
+.side-panel {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 0 28px !important;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 22px;
+  align-items: center;
+}
+.side-panel .profile-img,
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--chrome-edge);
+  background: var(--chrome);
+  padding: 4px;
+  grid-row: span 2;
+}
+.side-panel h1 {
+  margin: 0 0 10px !important;
+}
+.side-panel .affiliations {
+  text-align: left !important;
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.55;
+  margin: 0 0 12px !important;
+  grid-column: 2;
+}
+
+/* social icon row */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 10px;
+  grid-column: 2;
+}
+.social-links a,
+.social-links a[style] {     /* override inline background on original markup */
+  background: var(--chrome) !important;
+  color: var(--sol-base01) !important;
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 4px !important;
+  border: 1px solid var(--chrome-edge);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+.social-links a:hover,
+.social-links a[style]:hover {
+  background: var(--sol-blue) !important;
+  color: var(--sol-base3) !important;
+  border-color: var(--sol-blue);
+}
+
+/* ------------------------------------------------------------
+   Content blocks — reset the old "white card + shadow" look
+   so news items / publications / research sections sit inline
+   as plain markdown-like entries.
+   ------------------------------------------------------------ */
+.section {
+  margin-bottom: 26px;
+  padding: 0 !important;
+}
+
+/* News */
+.news-item {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 0 16px !important;
+  margin: 0 0 18px !important;
+  border: none !important;
+  border-bottom: 1px dashed rgba(88, 110, 117, 0.22) !important;
+}
+.news-item:last-child { border-bottom: none !important; }
+.news-item .news-date {
+  display: inline-block;
+  color: var(--sol-orange);
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.news-item h3 {
+  /* inside news, make h3 a quieter sub-heading (not the pill) */
+  background: transparent !important;
+  color: var(--text-strong) !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  font-size: 14.5px !important;
+  margin: 0 0 8px !important;
+}
+.news-item p { margin-bottom: 8px; }
+.news-item .media-container,
+.news-item .media-container img,
+.news-item .media-container video {
+  max-width: 100%;
+  height: auto;
+}
+.news-item .media-container img,
+.news-item .media-container video {
+  border-radius: 4px;
+  border: 1px solid var(--chrome);
+  margin: 10px 0 !important;
+  max-height: 340px;
+  object-fit: contain;
+  background: var(--chrome);
+  display: block;
+  box-shadow: none !important;
+}
+
+/* Override inline anchor colors that were #2d5016 */
+.news-item a,
+.news-item a[style] {
+  color: var(--link) !important;
+  font-weight: 500 !important;
+  text-decoration: underline;
+  text-decoration-color: rgba(38, 139, 210, 0.45);
+}
+.news-item a:hover,
+.news-item a[style]:hover {
+  color: var(--sol-cyan) !important;
+  text-decoration-color: var(--sol-cyan);
+}
+
+/* Publications */
+.publication {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 0 0 14px !important;
+  margin: 0 0 14px !important;
+  border: none !important;
+  border-left: 2px solid var(--chrome) !important;
+  border-radius: 0 !important;
+  transition: border-left-color 120ms ease;
+}
+.publication:hover { border-left-color: var(--sol-magenta) !important; }
+.publication h3 {
+  background: transparent !important;
+  color: var(--text-strong) !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  font-size: 14px !important;
+  margin: 0 0 2px !important;
+  font-weight: 600 !important;
+}
+.publication .authors {
+  font-size: 13px;
+  color: var(--text);
+  margin: 0 0 2px;
+}
+.publication .journal {
+  font-style: normal;
+  color: var(--sol-green);
+  font-size: 12.5px;
+  margin: 0 0 6px;
+}
+.publication .links {
+  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+}
+.publication .links a {
+  background: transparent !important;
+  color: var(--link) !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  font-size: 12.5px !important;
+  font-weight: 500 !important;
+  text-decoration: underline;
+  text-decoration-color: rgba(38, 139, 210, 0.45);
+  margin: 0 !important;
+}
+.publication .links a::before { content: "["; color: var(--text-muted); }
+.publication .links a::after  { content: "]"; color: var(--text-muted); }
+.publication .links a:hover {
+  color: var(--sol-cyan) !important;
+  text-decoration-color: var(--sol-cyan);
+  background: transparent !important;
+}
+
+/* Year headings inside publications (h3 pill + own line) */
+#publications h3:not(.publication h3),
+.section h3[style] {
+  /* year markers — force pill look regardless of inline styles */
+  background: var(--sol-green) !important;
+  color: var(--sol-base3) !important;
+  display: inline-block !important;
+  padding: 3px 10px !important;
+  border-radius: 3px !important;
+  font-size: 13px !important;
+  margin: 24px 0 12px !important;
+  box-shadow: none !important;
+  font-weight: 700 !important;
+}
+
+/* Research / content sections (research.html, service.html, projects.html) */
+.research-overview,
+.project-overview {
+  margin: 0 0 22px;
+}
+.research-overview img,
+.project-overview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid var(--chrome);
+  box-shadow: none !important;
+}
+
+.research-section,
+.content-section {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 0 20px !important;
+  margin: 0 0 24px !important;
+  border: none !important;
+  border-bottom: 1px dashed rgba(88, 110, 117, 0.22) !important;
+  border-radius: 0 !important;
+}
+.research-section:last-of-type,
+.content-section:last-of-type { border-bottom: none !important; }
+
+.research-section p,
+.content-section p {
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+  color: var(--text);
+}
+
+.research-areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+.research-card {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 14px !important;
+  border: 1px solid var(--chrome-edge);
+  border-radius: 4px;
+}
+
+.media-container {
+  text-align: left;
+  margin: 14px 0;
+}
+.media-container img,
+.media-container video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid var(--chrome);
+  box-shadow: none !important;
+  display: block;
+  margin: 10px 0 !important;
+}
+
+/* FontAwesome icons — default color */
+.fas, .fab, .far { color: inherit; }
+
+/* Back link (sister pages) — styled as a terminal "cd ~" prompt */
+.back-link,
+a.back-link {
+  background: transparent !important;
+  color: var(--sol-green) !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  display: inline-block;
+  margin: 0 0 22px !important;
+}
+.back-link:hover {
+  color: var(--sol-orange) !important;
+  text-decoration: underline !important;
+}
+
+/* Contact section — mailto + icons */
+#contact {
+  text-align: left !important;
+}
+#contact > div { text-align: left !important; }
+#contact p {
+  text-align: left !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: var(--text) !important;
+}
+#contact a[style] {   /* inline mailto colors */
+  color: var(--link) !important;
+  background: transparent !important;
+}
+#contact .social-links {
+  justify-content: flex-start !important;
+}
+
+/* Footer */
+footer {
+  background: transparent !important;
+  color: var(--text-muted) !important;
+  text-align: left !important;
+  padding: 20px 26px 24px !important;
+  margin: 0 !important;
+  border-top: 1px dashed rgba(88, 110, 117, 0.22);
+  font-size: 12px;
+}
+footer p { margin: 0; color: var(--text-muted); }
+
+/* ------------------------------------------------------------
+   Responsive
+   ------------------------------------------------------------ */
+@media (max-width: 640px) {
+  body { padding: 14px 8px 40px; font-size: 13px; }
+  .term-body, main, main.container { padding: 18px 16px 24px; }
+  main h1 { font-size: 19px; box-shadow: 4px 4px 0 var(--sol-violet); }
+  .side-panel {
+    grid-template-columns: 90px 1fr;
+    gap: 14px;
+  }
+  .profile-img { width: 90px !important; height: 90px !important; }
+  .term-titlebar .clock { display: none; }
+  .term-titlebar .title { font-size: 11px; }
+  .nav-bar { padding: 6px 12px; }
+  .nav-links a { font-size: 11.5px; padding: 3px 6px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor { animation: none; }
+  * { transition: none !important; }
+}
+
+@media (prefers-color-scheme: dark) {
+  html, body { background: #1C1C1C; }
+  /* Note: the terminal window itself stays Solarized Light —
+     this is intentional ("daytime terminal"). */
+}
