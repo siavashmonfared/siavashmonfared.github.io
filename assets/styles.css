@@ -271,20 +271,22 @@ main ul li::before {
   padding: 0 !important;
   margin: 0 0 28px !important;
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 140px 1fr;
   gap: 22px;
-  align-items: center;
+  align-items: start;
 }
 .side-panel .profile-img,
 .profile-img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
+  width: 140px;
+  height: auto;
+  aspect-ratio: 585 / 1024;
+  object-fit: contain;
   border-radius: 6px;
   border: 1px solid var(--chrome-edge);
   background: var(--chrome);
   padding: 4px;
   grid-row: span 2;
+  align-self: start;
 }
 .side-panel h1 {
   margin: 0 0 10px !important;
@@ -591,10 +593,10 @@ footer p { margin: 0; color: var(--text-muted); }
   .term-body, main, main.container { padding: 18px 16px 24px; }
   main h1 { font-size: 19px; box-shadow: 4px 4px 0 var(--sol-violet); }
   .side-panel {
-    grid-template-columns: 90px 1fr;
+    grid-template-columns: 110px 1fr;
     gap: 14px;
   }
-  .profile-img { width: 90px !important; height: 90px !important; }
+  .profile-img { width: 110px !important; height: auto !important; }
   .term-titlebar .clock { display: none; }
   .term-titlebar .title { font-size: 11px; }
   .nav-bar { padding: 6px 12px; }
