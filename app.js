@@ -28,6 +28,7 @@
         <div class="entry-toggle">+</div>
         <div class="entry-body"><div>
           <p>${n.body}</p>
+          ${n.media ? `<div class="entry-media"><img src="${n.media}" alt="${n.headline}" loading="lazy" /></div>` : ''}
           ${n.ref ? `<div class="ref">${n.ref}</div>` : ''}
           ${n.link ? `<a href="${n.link}" target="_blank" rel="noreferrer">OPEN ↗</a>` : ''}
         </div></div>

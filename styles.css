@@ -250,6 +250,7 @@ img { display: block; max-width: 100%; }
   aspect-ratio: 4 / 3; overflow: hidden;
 }
 .research-figure img { width: 100%; height: 100%; object-fit: cover; }
+.research-figure img.contain { object-fit: contain; padding: 24px; background: var(--bg-2); }
 .research-figure .fignum {
   position: absolute; top: 10px; left: 10px;
   font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em;
@@ -312,6 +313,11 @@ img { display: block; max-width: 100%; }
   transition: transform 140ms;
 }
 .entry-body a:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--ink); }
+.entry-media {
+  margin: 12px 0 14px; border: 1px solid var(--rule); background: var(--bg-2);
+  max-width: 520px; overflow: hidden;
+}
+.entry-media img { display: block; width: 100%; height: auto; }
 
 /* footer */
 .footer {

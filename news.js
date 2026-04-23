@@ -57,7 +57,8 @@ window.NEWS = [
     date: "2024.01.05",
     tag: "Update",
     headline: "Active force generation due to proliferation.",
-    body: "Most approaches to expanding cellular systems conserve mass and volume and focus on motility-driven active forces. Relaxing mass conservation lets us model active force generation from proliferation itself — central to development and regeneration, where source-driven expansion and local reorganization feed back on each other. Not a new paper, just the current focus — and a simulation that looks cool."
+    body: "Most approaches to expanding cellular systems conserve mass and volume and focus on motility-driven active forces. Relaxing mass conservation lets us model active force generation from proliferation itself — central to development and regeneration, where source-driven expansion and local reorganization feed back on each other. Not a new paper, just the current focus — and a simulation that looks cool.",
+    media: "assets/img/proliferate.gif"
   },
   {
     id: "elife-2023",
