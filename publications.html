@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Publications — Siavash Monfared</title>
+<meta name="description" content="Publications — journal articles, preprints, and reviews on active matter, granular physics, confined fluids, and mechanics of heterogeneous solids." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,600;0,700;0,800;1,700;1,800&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="dark">
+
+<header class="nav">
+  <div class="nav-mark"><span>SM</span><span>·</span><span>MONFARED</span><em>●</em></div>
+  <nav class="nav-links">
+    <a href="index.html#background">Background</a>
+    <a href="index.html#research">Research</a>
+    <a href="publications.html" aria-current="page">Publications</a>
+    <a href="index.html#news">News</a>
+    <a href="dei.html">DEI &amp; Service</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  <div class="nav-right">
+    <span class="mono small">Cambridge, MA</span>
+    <button class="theme" id="theme-toggle" aria-label="Toggle theme">DARK</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-meta reveal" data-i="0">
+    <a href="index.html" style="color: var(--ink-3); text-decoration: none;">← Back to home</a>
+    <span class="sep">—</span>
+    <span>Journal articles, preprints, reviews</span>
+  </div>
+
+  <h1 class="reveal" data-i="1">
+    <span class="hl">Publications.</span>
+  </h1>
+
+  <div class="hero-body reveal" data-i="2">
+    <div class="hero-lede">
+      <p>
+        Full list, most recent first. Click any entry to expand the
+        citation and links. For ongoing work and updates see
+        <a href="index.html#news" style="color: var(--accent);">News</a>;
+        for a summary by topic see
+        <a href="index.html#research" style="color: var(--accent);">Research</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <div class="section-label">§ — <span>All publications</span></div>
+    <h2>Peer-reviewed papers, preprints, and invited reviews.</h2>
+  </div>
+  <div id="pubs-list"></div>
+</section>
+
+<footer id="contact" class="footer">
+  <h3>Say hello. <a href="mailto:monfared@alum.mit.edu">monfared@alum.mit.edu</a></h3>
+  <div class="meta">
+    <a href="index.html">← Home</a><br/>
+    <a href="https://scholar.google.com/citations?user=E9GMpVEAAAAJ&hl=en" target="_blank" rel="noreferrer">Scholar ↗</a><br/>
+    <a href="https://github.com/siavashmonfared" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </div>
+</footer>
+
+<script src="pubs.js"></script>
+<script>
+  // Render publications list — styled to match the news section on the homepage.
+  (function renderPubs() {
+    const host = document.getElementById('pubs-list');
+    if (!host || !window.PUBS) return;
+    for (const p of window.PUBS) {
+      const el = document.createElement('div');
+      el.className = 'entry';
+      el.setAttribute('data-id', p.id);
+      el.innerHTML = `
+        <div class="entry-date">${p.date}</div>
+        <div class="entry-tag">${p.tag}</div>
+        <div class="entry-head">${p.title}</div>
+        <div class="entry-toggle">+</div>
+        <div class="entry-body"><div>
+          <p>${p.authors}</p>
+          <p class="ref">${p.venue}</p>
+          ${(p.links || []).map(l => `<a href="${l.href}" target="_blank" rel="noreferrer">${l.label}</a>`).join(' ')}
+        </div></div>
+      `;
+      el.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') return;
+        const open = el.getAttribute('data-open') === 'true';
+        el.setAttribute('data-open', (!open).toString());
+      });
+      host.appendChild(el);
+    }
+  })();
+
+  // Theme toggle.
+  const body = document.body;
+  const btn = document.getElementById('theme-toggle');
+  const saved = localStorage.getItem('sm-theme');
+  if (saved === 'light' || saved === 'dark') body.dataset.theme = saved;
+  function paint() { btn.textContent = body.dataset.theme === 'light' ? 'LIGHT' : 'DARK'; }
+  paint();
+  btn.addEventListener('click', () => {
+    body.dataset.theme = body.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('sm-theme', body.dataset.theme);
+    paint();
+  });
+</script>
+</body>
+</html>
