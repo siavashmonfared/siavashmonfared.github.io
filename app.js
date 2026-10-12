@@ -12,6 +12,17 @@
     paint();
   });
 
+  // Copy install commands
+  const check = '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg>';
+  document.querySelectorAll('.copy').forEach(b => {
+    const icon = b.innerHTML;
+    b.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(b.dataset.copy); } catch (e) { return; }
+      b.classList.add('done'); b.innerHTML = check;
+      setTimeout(() => { b.classList.remove('done'); b.innerHTML = icon; }, 1500);
+    });
+  });
+
   // Changelog
   const root = document.getElementById('changelog');
   const open = new Set(['natmat-2025']);

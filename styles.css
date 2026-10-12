@@ -183,6 +183,21 @@ img { display: block; max-width: 100%; }
   letter-spacing: -0.015em; margin: 0 0 14px; color: var(--ink);
 }
 .project p { font-size: 16px; line-height: 1.6; color: var(--ink-2); margin: 0 0 20px; flex: 1; }
+.project-cmd {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  border: 1px solid var(--rule-2); background: var(--bg);
+  padding: 10px 12px; margin-bottom: 18px;
+}
+.project-cmd code { font-family: var(--mono); font-size: 13px; color: var(--ink); overflow-x: auto; white-space: nowrap; }
+.project-cmd code::before { content: '$ '; color: var(--accent); }
+.copy {
+  display: inline-flex; align-items: center; justify-content: center;
+  flex: none; width: 30px; height: 30px; padding: 0;
+  background: transparent; color: var(--ink-3);
+  border: 1px solid var(--rule-2); cursor: pointer;
+  transition: color 140ms, border-color 140ms;
+}
+.copy:hover, .copy.done { color: var(--accent); border-color: var(--accent); }
 .project-link {
   align-self: flex-start;
   font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
