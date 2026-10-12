@@ -1,5 +1,14 @@
 window.NEWS = [
   {
+    id: "rhoa-2026",
+    date: "2026.07.08",
+    tag: "Preprint",
+    headline: "Mechanical tension actively triggers RhoA-mediated cell extrusion.",
+    body: "Using optogenetic RhoA activation, stress microscopy, and three-dimensional cell-based modeling, we show that elevated tension does not stabilize the epithelial monolayer. Instead it amplifies vertical mechanical fluctuations that drive both apical and basal extrusion of highly contractile cells, independently of caspase activation.",
+    ref: "F. Wodrascka, T. Ma, P. Gottheil, et al., S. Monfared, et al. bioRxiv, 2026.",
+    link: "https://doi.org/10.64898/2026.07.08.737158"
+  },
+  {
     id: "arcmp-2025",
     date: "2025.12.02",
     tag: "Publication",
@@ -12,7 +21,7 @@ window.NEWS = [
     id: "academie-2025",
     date: "2025.06.19",
     tag: "Award",
-    headline: "Les Grandes Avancées en Biologie — French Académie des sciences.",
+    headline: "Les Grandes Avancées en Biologie, French Académie des sciences.",
     body: 'Our Nature Materials paper "Force transmission is a master regulator of mechanical cell competition" received the Grand Advances in Biology distinction from the French Académie des sciences.',
     link: "https://www.academie-sciences.fr/en/node/2699"
   },
@@ -20,7 +29,7 @@ window.NEWS = [
     id: "natmat-2025",
     date: "2025.03.14",
     tag: "Publication",
-    headline: "Nature Materials — force transmission in mechanical cell competition.",
+    headline: "Nature Materials: force transmission in mechanical cell competition.",
     body: "Combining in-vitro experiments with in-silico modeling, we show that winning cells need not expel others by squeezing: they can remain compressed and still win, through a novel mechanism tied to force-transmission capability.",
     ref: "A. Schoenit, S. Monfared, L. Anger, et al. Nature Materials, 2025.",
     link: "https://doi.org/10.1038/s41563-025-02150-9"
@@ -38,8 +47,8 @@ window.NEWS = [
     id: "natphys-2025",
     date: "2025.01.08",
     tag: "Publication",
-    headline: "Nature Physics — dynamic forces shape the fate of eliminated cells.",
-    body: "A connection between stress-transmission capability (modulated via cell-cell adhesion) and the mode of cell extrusion — live vs. dead, apical vs. basal. Implications for tissue homeostasis, invasion, and cancer.",
+    headline: "Nature Physics: dynamic forces shape the fate of eliminated cells.",
+    body: "A connection between stress-transmission capability (modulated via cell-cell adhesion) and the mode of cell extrusion: live vs. dead, apical vs. basal. Implications for tissue homeostasis, invasion, and cancer.",
     ref: "L. Balasubramaniam, S. Monfared, et al. Nature Physics, 2025.",
     link: "https://rdcu.be/d5AD6"
   },
@@ -57,14 +66,14 @@ window.NEWS = [
     date: "2024.01.05",
     tag: "Update",
     headline: "Active force generation due to proliferation.",
-    body: "Most approaches to expanding cellular systems conserve mass and volume and focus on motility-driven active forces. Relaxing mass conservation lets us model active force generation from proliferation itself — central to development and regeneration, where source-driven expansion and local reorganization feed back on each other. Not a new paper, just the current focus — and a simulation that looks cool.",
+    body: "Most approaches to expanding cellular systems conserve mass and volume and focus on motility-driven active forces. Relaxing mass conservation lets us model active force generation from proliferation itself, central to development and regeneration, where source-driven expansion and local reorganization feed back on each other. Not a new paper, just the current focus, and a simulation that looks cool.",
     media: "assets/img/proliferate.gif"
   },
   {
     id: "elife-2023",
     date: "2023.04.24",
     tag: "Publication",
-    headline: "eLife — mechanical basis and topological routes to cell elimination.",
+    headline: "eLife: mechanical basis and topological routes to cell elimination.",
     body: "A three-dimensional model showing cells can switch between distinct mechanical pathways, leveraging defects in nematic and hexatic orders, to eliminate unwanted cells.",
     ref: "S. Monfared, G. Ravichandran, J.E. Andrade, A. Doostmohammadi. eLife, 2023.",
     link: "https://elifesciences.org/articles/82435"
@@ -73,7 +82,7 @@ window.NEWS = [
     id: "prl-2020",
     date: "2020.12.15",
     tag: "Publication",
-    headline: "PRL — capillary phase transition in confined granular aggregates.",
+    headline: "PRL: capillary phase transition in confined granular aggregates.",
     body: "Surface–surface correlations linked to the degree of confinement, and long-standing questions on the first-order nature of the liquid-gas transition and whether the capillary critical temperature is a true critical point.",
     ref: "S. Monfared et al. Physical Review Letters, 2020.",
     link: "https://dspace.mit.edu/handle/1721.1/97797"

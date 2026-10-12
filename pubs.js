@@ -2,6 +2,17 @@
 // Entries are rendered most-recent-first in the order listed here.
 window.PUBS = [
   {
+    id: "rhoa-2026",
+    date: "2026",
+    tag: "Preprint",
+    title: "Mechanical Tension Actively Triggers RhoA-Mediated Cell Extrusion.",
+    authors: "F. Wodrascka, T. Ma, P. Gottheil, R. Durand, L. Anger, A. Schoenit, M. Pandya, M. Arnaud, T. Dang, S. Monfared, G. Charras, R.M. Mège, A. Doostmohammadi, B. Ladoux, S. de Beco.",
+    venue: "bioRxiv, 2026.",
+    links: [
+      { label: "DOI ↗", href: "https://doi.org/10.64898/2026.07.08.737158" }
+    ]
+  },
+  {
     id: "arcmp-2025",
     date: "2025",
     tag: "Review",

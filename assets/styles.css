@@ -1,11 +1,11 @@
 /* =============================================================
-   Siavash Monfared — shared stylesheet
+   Siavash Monfared - shared stylesheet
    Terminal ("glow") aesthetic on a Solarized-Light palette.
 
    Heading hierarchy (same pill shape, descending emphasis):
-     h1 — magenta pill + offset violet shadow   (page title)
-     h2 — blue pill   + softer slate shadow     (section)
-     h3 — green pill  + flat                    (sub-section)
+     h1 - magenta pill + offset violet shadow   (page title)
+     h2 - blue pill   + softer slate shadow     (section)
+     h3 - green pill  + flat                    (sub-section)
    ============================================================= */
 
 :root {
@@ -259,7 +259,7 @@ main ul li::before {
 .nav-links li::before { content: none !important; }
 
 /* ------------------------------------------------------------
-   Home page — profile "card" (was .side-panel)
+   Home page - profile "card" (was .side-panel)
    Repositioned above content for the terminal column layout
    ------------------------------------------------------------ */
 .side-panel {
@@ -330,7 +330,7 @@ main ul li::before {
 }
 
 /* ------------------------------------------------------------
-   Content blocks — reset the old "white card + shadow" look
+   Content blocks - reset the old "white card + shadow" look
    so news items / publications / research sections sit inline
    as plain markdown-like entries.
    ------------------------------------------------------------ */
@@ -459,7 +459,7 @@ main ul li::before {
 /* Year headings inside publications (h3 pill + own line) */
 #publications h3:not(.publication h3),
 .section h3[style] {
-  /* year markers — force pill look regardless of inline styles */
+  /* year markers - force pill look regardless of inline styles */
   background: var(--sol-green) !important;
   color: var(--sol-base3) !important;
   display: inline-block !important;
@@ -533,10 +533,10 @@ main ul li::before {
   margin: 10px 0 !important;
 }
 
-/* FontAwesome icons — default color */
+/* FontAwesome icons - default color */
 .fas, .fab, .far { color: inherit; }
 
-/* Back link (sister pages) — styled as a terminal "cd ~" prompt */
+/* Back link (sister pages) - styled as a terminal "cd ~" prompt */
 .back-link,
 a.back-link {
   background: transparent !important;
@@ -554,7 +554,7 @@ a.back-link {
   text-decoration: underline !important;
 }
 
-/* Contact section — mailto + icons */
+/* Contact section - mailto + icons */
 #contact {
   text-align: left !important;
 }
@@ -610,6 +610,6 @@ footer p { margin: 0; color: var(--text-muted); }
 
 @media (prefers-color-scheme: dark) {
   html, body { background: #1C1C1C; }
-  /* Note: the terminal window itself stays Solarized Light —
+  /* Note: the terminal window itself stays Solarized Light -
      this is intentional ("daytime terminal"). */
 }

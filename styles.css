@@ -115,6 +115,8 @@ img { display: block; max-width: 100%; }
 .hero-lede a:hover { color: var(--accent); }
 .hero-lede p { margin: 0 0 14px; }
 .hero-lede strong { color: var(--ink); font-weight: 600; }
+.hero-lede .hl { background: var(--accent); color: var(--accent-ink); padding: 0 0.15em; font-weight: 600; }
+.hero-meta + .hero-body { margin-top: 0; }
 
 .hero-side { padding-top: 0; }
 .hero-side .label {
@@ -164,6 +166,31 @@ img { display: block; max-width: 100%; }
 }
 .section-head h2 em { font-style: italic; color: var(--ink-2); font-weight: 600; }
 .section-head h2 .hl { background: var(--accent); color: var(--accent-ink); padding: 0 0.1em; font-style: normal; }
+
+/* projects */
+.projects { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.project {
+  border: 1px solid var(--rule); background: var(--bg-2);
+  padding: 28px; display: flex; flex-direction: column;
+}
+.project-kind {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 10px;
+}
+.project h3 {
+  font-family: var(--display); font-weight: 700; font-stretch: 110%;
+  font-size: clamp(24px, 2.6vw, 34px); line-height: 1.1;
+  letter-spacing: -0.015em; margin: 0 0 14px; color: var(--ink);
+}
+.project p { font-size: 16px; line-height: 1.6; color: var(--ink-2); margin: 0 0 20px; flex: 1; }
+.project-link {
+  align-self: flex-start;
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--ink-2); text-decoration: none;
+  border-bottom: 1px solid var(--rule-2); padding-bottom: 2px;
+  transition: color 160ms, border-color 160ms;
+}
+.project-link:hover { color: var(--accent); border-color: var(--accent); }
 
 /* featured */
 .featured {
@@ -369,6 +396,7 @@ img { display: block; max-width: 100%; }
   .hero-portrait { max-width: 260px; }
   .section { padding: 50px 20px; }
   .section-head { grid-template-columns: 1fr; gap: 12px; margin-bottom: 36px; }
+  .projects { grid-template-columns: 1fr; gap: 20px; }
   .featured, .research-row, .research-row.reverse { grid-template-columns: 1fr; gap: 24px; }
   .research-row.reverse .research-figure { order: 0; }
   .tl-row { grid-template-columns: 1fr; gap: 6px; }
